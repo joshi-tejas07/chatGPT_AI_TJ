@@ -107,9 +107,9 @@ const handleSubmit = async (e) => {
         const data = await response.json();
         const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
 
-        typeText(messageDiv, parsedData);
+        typeText(messageDiv, parsedData)
     } else {
-        const err = await response.text();
+        const err = await response.text()
 
         messageDiv.innerHTML = "Something went wrong"
         alert("Oopps something wrong !!!")
