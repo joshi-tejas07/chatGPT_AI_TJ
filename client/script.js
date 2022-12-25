@@ -90,7 +90,7 @@ const handleSubmit = async (e) => {
 
     
 
-    const response = await fetch('https://tejax.onrender.com', {
+    const response = await fetch('https://tejax.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
